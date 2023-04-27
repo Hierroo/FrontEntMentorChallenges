@@ -108,20 +108,21 @@ body {
     height: 100%;
 }
 
+
 .expense-bar {
     position: relative;
     display: flex;
     justify-content: center;
+    align-items: end;
     width: 32px;
     height: 0%;
     
-    padding: 4px 2px;
+    padding: 5px 5px;
     
     transition: all 0.3s ease;
 }
 
 .bar-color {
-    
     opacity: 1;
     background-color: var(--primary);
     width: 100%;
