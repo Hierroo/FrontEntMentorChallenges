@@ -1,0 +1,169 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+:root {
+    --light-grey: hsl(217, 14%, 58%);
+    --dark-grey: hsl(219, 15%, 19%);
+    --dark-blue: hsl(214, 20%, 14%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+    --orange: hsl(25, 97%, 53%);
+    --card-gradient: linear-gradient( 3deg,hsl(215, 21%, 11%), hsl(215, 20%, 12%),hsl(214, 20%, 14%), hsl(219, 18%, 18%));
+}
+
+* {
+    margin: 0px;
+    font-family: "Overpass";
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: var(--very-dark-blue);
+}
+
+p, span {
+    font-weight: 400;
+    font-size: 0.98em;
+}
+
+/* ------ RATING CARD------*/
+
+.rating-card {
+    width: 87vw;
+    max-width: 369px;
+    border-radius: 18px; 
+    background: var(--card-gradient);
+     
+}
+.div-rating-card { 
+    padding: 2em 1.75em 2.4em 1.75em;
+}
+
+/* ------RATING CONTENT------*/
+
+.rating-content h1 {
+    font-size: 1.5em;
+    font-weight: 650;
+    color: white;
+    letter-spacing: 1.7px;
+    
+    margin-top: 18px
+}
+.rating-content img {
+    background-color: var(--dark-grey);
+    padding: 12px;
+    border-radius: 50%;
+}
+
+.rating-content p {
+    color: var(--light-grey);
+    margin-top: 18px;
+}
+
+
+/* ------RATING FORM------*/
+
+.div-inputs {
+    margin-top: 30px;
+    
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+    
+}
+.rating-input {
+    width: 47px;
+    height: 47px;
+    background-color: var(--dark-grey);
+    border: none;
+    padding: 15px;
+    border-radius: 100%;
+    
+    color: var(--light-grey);
+    
+    cursor: pointer;
+}
+
+.active {
+    background-color: var(--orange);
+    color: white;
+}
+
+.rating-input:hover {
+    background-color: var(--light-grey);
+    color: white;
+}
+.rating-input:active {
+    background-color: var(--orange);
+    color: white;
+}
+
+.submit-btn {
+    margin-top: 27px;
+    
+    font-size: 0.82em;
+    font-weight: 700;
+    letter-spacing: 3px;
+    
+    width: 100%;
+    background-color: var(--orange);
+    color: white;
+    border: none;
+    
+    padding: 16px;
+    border-radius: 25px;
+    
+    cursor: pointer;
+}
+.submit-btn:active {
+    background-color: white;
+    color: var(--orange);
+}
+
+/* ------THANKS CARD------*/
+
+.thanks-card {
+    width: 87vw;
+    max-width: 369px;
+    border-radius: 18px; 
+    background: var(--card-gradient);
+}
+.div-thanks-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.7em 1em;
+}
+
+.thanks-message {
+    margin-top: 29px;
+    background-color: var(--dark-grey);
+    padding: 9px 15px;
+    border-radius: 50px;
+    color: var(--orange)
+}
+
+.div-thanks-card h1 {
+    margin-top: 27px;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 650;
+    letter-spacing: 1.7px;
+}
+
+.thanks-p {
+    margin-top: 15px;
+    color: var(--light-grey);
+    text-align: center;
+    line-height: 24px;
+}
+
+
+
+
+

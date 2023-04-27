@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+:root {
+    --primary: hsl(10, 79%, 65%);
+    --high: hsl(186, 34%, 60%);
+    --text-2: hsl(25, 47%, 15%);
+    --medium-brown: hsla(28, 10%, 53%, 0.859);
+    --background: hsl(27, 66%, 92%);
+    --chart-bg: hsl(33, 100%, 98%);
+    --typo: 'DM Sans', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--typo);
+    letter-spacing: 0.5px;
+}
+
+body {
+    background-color: var(--background);
+    padding: 0px 14px;
+}
+
+
+/*------------TOP COMPONENT-------------------*/
+
+.user-balance-component {
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 25px;
+    margin-top: 4em;
+    
+    border-radius: 12px;
+}
+.div-user-balance {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 6px;
+}
+.user-balance-component h1 {
+    font-size: 15px;
+    color: white;
+    font-weight: 400;
+}
+.user-balance {
+    color: white;
+    font-weight: 700;
+    font-size: 1.4em;
+}
+
+/*-------------------------------*/
+
+/*------------InFO COMPONENT-------------------*/
+
+.user-balance-info-component {
+    background-color: white;
+    border-radius: 12px;
+    margin-top: 1.1em;
+    
+    padding: 27px 20px;
+}
+
+.user-balance-info-component h1 {
+    font-size: 1.4em;
+    font-weight: 750;
+    color: var(--text-2)
+}
+.user-week-chart-component {
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-between;
+    
+    margin-top: 1.1em;
+    
+    height: 13em;
+}
+
+.user-week-chart-component h2 {
+    margin-top: 0.8em;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--medium-brown);
+}
+.bar-component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    
+    height: 100%;
+}
+
+.expense-bar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 32px;
+    height: 0%;
+    
+    padding: 4px 2px;
+    
+    transition: all 0.3s ease;
+}
+
+.bar-color {
+    
+    opacity: 1;
+    background-color: var(--primary);
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.expense-price {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: -18px;
+    font-size: 12px;
+    font-weight: 700;
+    background-color: var(--text-2);
+    color: white;
+    border-radius: 3px;
+    padding: 5px 3px;
+    
+    transition: all 0.4s ease;
+}
+
+.top-expense {
+    background-color: var(--high);
+}
+
+    /*------------month-------------------*/
+    
+.line {
+    margin-top: 1.9em;
+    display: inline-block;
+    height: 1.5px;
+    width: 100%;
+    background-color: var(--background); 
+}
+.user-month-balance-component {
+    margin-top: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.user-month-balance-component h2 {
+    color: var(--medium-brown);
+    font-weight: 500;
+    font-size: 14px;
+}
+.user-total-balance-month {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: var(--text-2)
+}
+
+.div-month-balance {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.user-month-balance-comparison {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 3px;
+}
+.comparison-percentage {
+    font-weight: 700;
+    color: var(--text-2);
+}
+

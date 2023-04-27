@@ -1,0 +1,4 @@
+#Layout mobile - 2 horas;
+#script - 1h30 hora
+
+// Foi bem dahorinha fazer o layout. Fui reproduzindo no olho mesmo. Fiz algumas alterações nas cores que vieram no guia e na fonte para ficarem fiéis ao design, incluindo o degradê que tem nos cards.

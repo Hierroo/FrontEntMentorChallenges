@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./suporte/images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | Interactive pricing component</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="main">
+        <div class="div-top-content">
+            <img src="suporte/images/pattern-circles.svg">
+            <h1>Simple, traffic-based pricing</h1>
+            <div class="div-paragraphs">
+                <p>Sign-up for our 30-day-trial.</p>
+                <p>No credit card required.</p>
+            </div>
+        </div>
+        
+        <!-- TOP -->
+        
+        <div class="card">
+            <div class="pricing-card">
+                <span class="reviews-amount">100K PAGEVIEWS</span>
+                <input class="price-bar" type="range" min="0" max="200" step="50">
+                <div class="div-price-per-date">
+                    <span class="reviews-price">$16.00</span>
+                    <span class="per-date">/ month</span>
+                </div>
+                <div class="biling">
+                    <span class="biling-txt">Monthly Billing</span>
+                    <label class="switch">
+                        <input class="switch-input" type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                    <span class="biling-txt">Yearly Biling</span>
+                </div>
+            </div>
+            
+            <div class="benefits-card">
+                <ul class="benefits-list">
+                    <li><img src="suporte/images/icon-check.svg">Unlimited websites</li>
+                    <li><img src="suporte/images/icon-check.svg">100% data ownership</li>
+                    <li><img src="suporte/images/icon-check.svg">Email reports</li>
+                </ul>
+                <form action="">
+                    <button class="benefit-btn"type="submit">Start my trial</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

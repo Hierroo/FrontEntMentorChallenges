@@ -1,0 +1,3 @@
+* Gostei de fazer o projeto, a parte que mais me tomou tempo foi fazer o layout, aproximadamente 6 horas e 3 horas para o javascript, nao está totalmente responsivo pois foquei em finalizar o objetivo dele em si;
+
+* A programação foi desafiadora de inicio pois não consegui de primeira chegar em uma boa lógica para implementar o plano de negocio, mas, depois de uma pausa, ela surgiu e rapidamente terminei o projeto com a programação funcionando perfeitamente e de forma dinamica;
