@@ -117,9 +117,8 @@ body {
     width: 32px;
     height: 0%;
     
-    padding: 5px 5px;
-    
     transition: all 0.3s ease;
+    
 }
 
 .bar-color {
@@ -129,6 +128,7 @@ body {
     height: 100%;
     border-radius: 5px;
     transition: all 0.3s ease;
+    
 }
 .expense-price {
     visibility: hidden;
