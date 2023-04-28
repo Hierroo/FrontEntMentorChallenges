@@ -23,6 +23,7 @@
 * {
     margin: 0px;
     font-family: "Manrope";
+    transition: all 0.2s ease;
 }
 
 body {
@@ -42,7 +43,9 @@ body {
 
 /*------------TOP CONTENT------------*/
 .div-top-content {
-    margin-top: 6em;
+    position: relative;
+    width: 90%;
+    margin-top: 4em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,12 +53,12 @@ body {
 }
 .div-top-content img {
     position: absolute;
-    top: 58px;
-    width: 180px;
+    top: -37px;
+    width: 160px;
 }
 .div-top-content  h1 {
     color: var(--text-and-cta);
-    font-size: 1.6em;
+    font-size: 1.4em;
     font-weight: 850;
     text-align: center;
     
@@ -73,7 +76,7 @@ body {
     align-items: center;
     
     margin-top: 0.4em;
-    font-size: 16px;
+    font-size: 14.5px;
     color: var(--text);
     font-weight: 700;
     
@@ -87,8 +90,8 @@ body {
     justify-content: space-between;
     gap: 23px;
     width: 90%;
-    margin-top: 5em;
-    box-shadow: 0px 20px 30px 0px rgba(214, 214, 214, 0.355);
+    margin-top: 4em;
+    box-shadow: 0px 20px 30px 0px rgba(181, 181, 181, 0.355);
 }
 
 /*-----------REVIEWS-------------*/
@@ -101,7 +104,7 @@ body {
     gap: 48px;
     
     
-    padding: 25px;
+    padding: 23px 20px;
     border-radius: 10px;
     
     background-color: white;
@@ -109,7 +112,7 @@ body {
 .reviews-amount {
     margin-top: 1.5em;
     font-weight: 800;
-    font-size: 1em;
+    font-size: 0.9em;
     letter-spacing: 2px;
     color: var(--text);
 }
@@ -123,6 +126,7 @@ body {
     appearance: none;
     background: var(--empty-slider-bar);
     border-radius: 15px;
+    
 }
 
 .price-bar::-webkit-slider-thumb {
@@ -133,7 +137,11 @@ body {
     
     border-radius: 100%;
     box-shadow: 0px 12px 30px 6px var(--slider-shadow);
-    background: var(--slider-bg);
+    background-image: url(suporte/images/icon-slider.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: var(--slider-bg);
+    
 }
 
 
@@ -162,33 +170,40 @@ body {
 
 .per-date {
     font-weight: 700;
-    font-size: 1.1em;
+    font-size: 1em;
     color: var(--text);
 }
 /*------------------------*/
 
 .biling {
     position: relative;
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 8px;
     align-items: center;
-    gap: 10px;
+    
+    padding-left: 25px;
 }
 .biling-txt {
+    font-size: 0.9em;
     font-weight: 600;
     color: var(--text);
 }
 
-.biling::after {
-    position: absolute;
-    left: 287px;
-    content: "-25%";
-    padding: 4px 12px;
+.billing-discount {
+    padding: 4px 9px;
     border-radius: 15px;
     font-weight: 800;
     font-size: 0.8em;
     color: var(--discount-text);
     background-color: var(--discount-bg);
+}
+.div-year-with-discount {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
 }
 
 .switch {
@@ -244,7 +259,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    gap: 40px;
+    gap: 35px;
     padding: 20px 20px 50px 20px;
     border-top: 2px solid rgba(214, 214, 214, 0.355);
     border-radius: 0px 0px 10px 10px;
@@ -265,6 +280,7 @@ body {
     list-style-type: none;
     color: var(--text);
     font-weight: 600;
+    font-size: 0.9em;
 }
 .benefits-list li img {
     width: 13px;
@@ -276,11 +292,99 @@ body {
     color: var(--cta-text);
     
     font-weight: 700;
-    font-size: 1em;
+    font-size: 0.9em;
     
     border-radius: 30px;
-    padding: 18px 65px;
+    padding: 16px 65px;
     border-width: 0px;
 }
 
 /*----------------------------------*/
+
+@media screen and (min-width: 721px) {
+    .main {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+    }
+    .div-top-content {
+        margin-top: -70px;
+    }
+    .div-top-content h1 {
+        font-size: 2em;
+    }
+    .div-paragraphs {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 7px;
+    }
+    .card {
+        width: 661px;
+        margin-top: 6.8em;
+    }
+    .pricing-card {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 58px;
+        padding-left: 55px;
+        padding-right: 55px;
+        row-gap: 48px;
+        
+    }
+    .price-bar {
+        width: 100%;
+    }
+    .reviews-amount {
+        order: 1;
+        margin-top: 0px;
+    }
+    .div-price-per-date {
+        order: 2;
+        
+    }
+    .price-bar {
+        order: 3;
+    }
+    .biling {
+        order: 4;
+        margin-top: 1.4em;
+        width: 100%;
+        
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 0px;
+        
+    }
+    
+    .benefits-card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        padding: 30px 50px 50px 50px;
+    }
+    
+    .benefits-list {
+        align-items: start;
+        row-gap: 15px;
+    }
+}
+
+@media screen and (max-width: 388px) {
+    
+    .biling {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        
+        padding-left: 0px;
+    }
+    .biling-txt {
+        text-align: center;
+    }
+}
