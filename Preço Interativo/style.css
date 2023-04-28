@@ -26,13 +26,11 @@
     transition: all 0.2s ease;
 }
 
-body {
+
+.main {
     background: url(suporte/images/bg-pattern.svg);
     background-repeat: no-repeat;
     background-position: left top;
-}
-
-.main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -301,8 +299,19 @@ body {
 
 /*----------------------------------*/
 
+.voltar {
+    color: grey;
+    margin-top: 2em;
+}
+.voltar:visited {
+    color: grey;
+}
+
 @media screen and (min-width: 721px) {
+
     .main {
+        background-position: top left;
+        background-size: contain;
         height: 100vh;
         display: flex;
         justify-content: center;
@@ -359,6 +368,12 @@ body {
         gap: 20px;
         padding: 0px;
         
+    }
+    
+    .billing-discount {
+        position: absolute;
+        
+        left: 78%;
     }
     
     .benefits-card {
