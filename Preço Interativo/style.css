@@ -90,6 +90,8 @@
     width: 90%;
     margin-top: 4em;
     box-shadow: 0px 20px 30px 0px rgba(181, 181, 181, 0.355);
+    
+    background-color: white;
 }
 
 /*-----------REVIEWS-------------*/
@@ -295,6 +297,8 @@
     border-radius: 30px;
     padding: 16px 65px;
     border-width: 0px;
+    
+    cursor: pointer;
 }
 
 /*----------------------------------*/
